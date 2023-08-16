@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/imgs/Frame 90 2.svg" />
+    <title>Best Sigma - Home</title>
+  </head>
+  <body class="font-openSans">
+    <!-- Header -->
+    <header>
+      <nav
+        class="container flex md:justify-evenly text-primary mx-auto p-5 font-bold"
+      >
+        <ul class="hidden md:flex items-center text-base space-x-8">
+          <li>
+            <a
+              href="#get"
+              class="bg-secondary py-2 px-8 rounded-md text-black font-bold hover:opacity-80 duration-200"
+              id="contact"
+              >צור קשר</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                id="lang"
+                src="imgs/russia.png"
+                alt="Russian Icon"
+                class="w-7"
+                onclick="changeLanguage()"
+            /></a>
+          </li>
+        </ul>
+
+        <!-- Mobile Navbar -->
+
+        <div class="flex md:hidden space-x-32 md:space-x-0">
+          <ul class="md:hidden">
+            <li>
+              <button
+                class="button-mobile-menu md:hidden text-primary text-2xl"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </li>
+            <div class="mobile-menu hidden space-y-2">
+              <li>
+                <a href="index.html" class="block text-primary py-2 text-sm"
+                  >דף הבית</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="block text-primary py-2 text-sm"
+                  >מי אנחנו</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    id="lang"
+                    src="imgs/russia.png"
+                    alt="Russian Icon"
+                    class="w-7"
+                    onclick="changeLanguage()"
+                /></a>
+              </li>
+            </div>
+          </ul>
+
+          <ul>
+            <img
+              src="./imgs/Frame 90 2.svg"
+              alt="Best sigma logo"
+              class="w-16"
+            />
+          </ul>
+        </div>
+
+        <!-- Desktop Navbar -->
+
+        <ul class="hidden md:flex space-x-8 items-center text-base">
+          <li>
+            <a
+              href="about.html"
+              class="hover:underline hover:underline-offset-8"
+              id="about"
+              >מי אנחנו</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline hover:underline-offset-8"
+              id="homepage"
+              >דף הבית</a
+            >
+          </li>
+          <li>
+            <img
+              src="./imgs/Frame 90 2.svg"
+              alt="Best sigma logo"
+              class="w-16"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+
+    <section class="container mx-auto mt-0 md:mt-10">
+      <div class="flex flex-col md:flex-row justify-center items-center">
+        <img
+          src="imgs/Column.svg"
+          alt="elders hugging happy"
+          class="w-[400px] mr-10"
+        />
+        <div id="box" class="text-center md:text-right md:space-x-2">
+          <h1
+            class="text-primary font-bold text-center md:text-right text-3xl mb-4"
+            id="title"
+          >
+            פרישה נכונה לעתיד שקט
+          </h1>
+          <p
+            class="mb-6 max-w-sm font-semibold text-center md:text-right px-4 md:px-0"
+            id="paragraph"
+          >
+            בסט סיגמא כאן כדי לסייע לכם בתהליך המורכב והחשוב של הפרישה ולספק לכם
+            את המידע והכלים הנדרשים כדי לקבל החלטות חשובות וכדי להתמודד בצורה
+            מקצועית ומפורטת עם כל הנושאים
+          </p>
+          <a
+            href="#get"
+            class="bg-secondary py-3 px-12 mx-auto rounded-md text-black font-bold md:text-right hover:opacity-80 duration-200"
+            id="call"
+            >צור קשר</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col-reverse md:flex-row justify-center items-center mt-20 space-y-6 md:space-y-0 md:space-x-20"
+      >
+        <div class="flex flex-col items-center text-center ">
+          <img src="imgs/logo comp.svg" alt="" class="w-24 mt-4 md:mb-2" />
+          <h3 id="heading" class="font-bold">מקצוענות</h3>
+          <p id="secondp" class="max-w-[160px]">בכל הנושאים תחת קורת גג אחת</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="imgs/Rings.svg" alt="" class="w-24 mb-2" />
+          <h3 id="secondh" class="font-bold">ביחד</h3>
+          <p id="thirdp" class="max-w-[60px]">יחס אישי ולווי צמוד</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="imgs/Device.svg" alt="" class="w-24" />
+          <h3 id="thirdh" class="font-bold">15K</h3>
+          <p id="fourthp" class="max-w-[160px]">
+            לקוחות מרוצים ממתן השירות שלנו
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="imgs/Trophy.svg" alt="" class="w-24 mb-2" />
+          <h3 id="fourthh" class="font-bold">מקום 1</h3>
+          <p id="fifthp" class="max-w-[160px]">
+            בשירות לקוחות מחברת מנורה מבטחים
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid -->
+
+    <section class="container mx-auto">
+      <h1 id="fifthh" class="text-3xl text-center font-bold my-6 text-primary">
+        השירותים שלנו
+      </h1>
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 text-center gap-5 md:gap-10 px-20 lg:px-[22rem] mx-auto font-bold"
+      >
+        <div
+          class="flex flex-col items-center justify-center bg-tertiary rounded-3xl"
+        >
+          <img src="./imgs/left-hand.svg" alt="" class="mx-auto w-16 md:w-20" />
+
+          <h3 id="sixthh">טיפול במענקי הפרש</h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center bg-tertiary rounded-3xl"
+        >
+          <img src="./imgs/savings.svg" alt="" class="mx-auto w-20" />
+          <h3 id="seventhh">טיפול במענקי הפרש</h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center bg-tertiary rounded-3xl"
+        >
+          <img src="./imgs/exam-sheets.svg" alt="" class="w-20 mx-auto" />
+          <h3 id="eigthh">קיבוע זכויות</h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center bg-tertiary rounded-3xl"
+        >
+          <img src="./imgs/Treasure.svg" alt="" class="mx-auto my-auto w-20" />
+          <h3 id="ninthh">החזר מס</h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center bg-tertiary rounded-3xl"
+        >
+          <img src="./imgs/wallet.svg" alt="" class="mx-auto w-20" />
+          <h3 id="tenthh">פריצת פיצויים</h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center bg-tertiary rounded-3xl py-5"
+        >
+          <img src="./imgs/job.svg" alt="" class=" mx-auto w-20" />
+          <h3 id="eleventhh">טיפול בטפסי 161</h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center bg-tertiary rounded-3xl py-8 md:py-10"
+        >
+          <img src="./imgs/hand-2.svg" alt="" class="mx-auto w-20" />
+          <h3 id="twelvethh">פדיון כספים</h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center bg-tertiary rounded-3xl py-8 md:py-0"
+        >
+          <img src="./imgs/Frame 110.svg" alt="" class="mx-auto w-20" />
+          <h3 id="thirdteenthh">ליווי בקבלת קצבאות מביטוח לאומי</h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center bg-tertiary rounded-3xl  py-8 md:py-0"
+        >
+          <img src="./imgs/Frame 108.svg" alt="" class="mx-auto w-20" />
+          <h3 id="fourteenthh">ליווי בסיוע בשכר דירה</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands -->
+
+    <section class="container mx-auto w-full mb-10">
+      <h1
+        id="fifteenthh"
+        class="text-3xl text-center font-bold my-6 text-primary"
+      >
+        הנבחרת שלנו
+      </h1>
+      <div
+        class="flex flex-col justify-center items-center space-y-12 md:flex-row md:space-y-0 md:space-x-14"
+      >
+        <div>
+          <img src="imgs/Frame 177.svg" alt="מגדל" class="w-9" />
+        </div>
+
+        <div>
+          <img src="imgs/Frame 178.svg" alt="עמיתים קרנות פנסיה" class="w-32" />
+        </div>
+
+        <div>
+          <img src="imgs/Frame 179.svg" alt="הפניקס" class="w-32" />
+        </div>
+
+        <div>
+          <img src="imgs/Frame 180.svg" alt="מנורה מבטחים" class="w-32" />
+        </div>
+
+        <div>
+          <img
+            src="imgs/Frame 181.svg"
+            alt="הראל ביטוח ופיננסים"
+            class="w-32"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="relative bg-tertiary w-full p-5 mx-auto h-[32em]">
+      <img
+        src="/imgs/Group.svg"
+        alt=""
+        class="hidden md:block absolute top-0 left-[33em] w-64"
+      />
+      <img
+        src="/imgs/Group.svg"
+        alt=""
+        class="hidden md:block absolute -top-9 right-[31em] rotate-180 w-64"
+      />
+      <img
+        src="/imgs/speech-bubble-2.svg"
+        alt=""
+        class="hidden md:block absolute top-10 left-[40em] w-10"
+      />
+      <img
+        src="/imgs/speech-bubble-2.svg"
+        alt=""
+        class="hidden md:block absolute top-48 right-[40em] w-10"
+      />
+      <div
+        class="container flex flex-col justify-center items-center bg-quaternary mx-auto py-1 text-center rounded-xl max-w-full w-96"
+      >
+        <img
+          src="/imgs/speech-bubble-2.svg"
+          alt=""
+          class="hidden md:block absolute left-[66em] top-[12rem] rotate-180 w-10"
+        />
+        <h1 id="get" class="font-bold text-2xl mb-6 text-black">צרו קשר</h1>
+
+        <!-- Submit Form -->
+
+        <form
+          action="https://formsubmit.co/20b5574fc7a573a4f3105e5f5e3f8b7a"
+          method="POST"
+          class="flex flex-col"
+        >
+          <label id="firstLabel" for="שם" class="text-right">:שם</label>
+          <input
+            id="שם"
+            required
+            type="text"
+            name="שם"
+            size="28"
+            class="rounded-xl mb-2 text-right px-2 font-bold"
+          />
+
+          <label id="secondLabel" for="טלפון" class="text-right">:טלפון</label>
+          <input
+            id="טלפון"
+            type="tel"
+            name=":טלפון"
+            required
+            pattern="[0-9]{3}-[0-9]{7}"
+            placeholder="123-1234567"
+            class="rounded-xl mb-6 text-right placeholder:text-white px-2 font-bold outline-0 focus:valid:bg-green-500 focus:invalid:bg-red-700 duration-150"
+          />
+          <button
+            id="send"
+            class="bg-lightGreen px-12 py-1 mb-4 rounded-xl font-bold text-white mx-auto hover:opacity-80 duration-200"
+          >
+            שליחה
+          </button>
+        </form>
+      </div>
+
+      <div class="flex flex-col items-center text-sm mt-20 space-y-2">
+        <div class="flex space-x-3 items-center text-center">
+          <p id="sixthp">052-4455544</p>
+          <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <div class="flex space-x-3 items-center text-center">
+          <p id="seventhp">רחוב ההגנה 13, ראשון לציון, מגדל ירון מילר</p>
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+
+        <div class="flex space-x-3 items-center text-center">
+          <p id="eigthp">17:00-09:00 'א'-ה</p>
+          <i class="fa-solid fa-clock"></i>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+
+      <p class="text-center mt-4">
+        Copyright ©️
+        <a
+          class="font-bold text-primary hover:opacity-80 duration-200"
+          href="https://www.pensiya.co.il"
+          >Best Sigma</a
+        >
+      </p>
+
+      <p class="text-center mt-2">
+        Built with 💖 by
+        <a
+          href="https://wayfinix.com"
+          class="font-bold text-primary hover:opacity-80 duration-200 cursor-pointer"
+          >wayfinix</a
+        >
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
